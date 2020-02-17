@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Project
 //
-//  Created by epita on 17/02/2020.
-//  Copyright © 2020 epita. All rights reserved.
+//  Created by Zwel Pai on 17/02/2020.
+//  Copyright © 2020 Zwel Pai. All rights reserved.
 //
 
 import UIKit

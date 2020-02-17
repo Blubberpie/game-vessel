@@ -8,20 +8,34 @@
 
 /* Begin PBXBuildFile section */
 		4C0621F423FAEF620059E778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0621F323FAEF620059E778 /* AppDelegate.swift */; };
-		4C0621F623FAEF620059E778 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0621F523FAEF620059E778 /* ViewController.swift */; };
+		4C0621F623FAEF620059E778 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0621F523FAEF620059E778 /* TableViewController.swift */; };
 		4C0621F923FAEF620059E778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0621F723FAEF620059E778 /* Main.storyboard */; };
 		4C0621FB23FAEF640059E778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0621FA23FAEF640059E778 /* Assets.xcassets */; };
 		4C0621FE23FAEF640059E778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0621FC23FAEF640059E778 /* LaunchScreen.storyboard */; };
+		4C06220623FB13380059E778 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220523FB13380059E778 /* APIService.swift */; };
+		4C06220823FB150F0059E778 /* UserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220723FB150F0059E778 /* UserResult.swift */; };
+		4C06220A23FB15390059E778 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220923FB15390059E778 /* User.swift */; };
+		4C06220C23FB15410059E778 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220B23FB15410059E778 /* UserName.swift */; };
+		4C06220E23FB15570059E778 /* UserPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220D23FB15570059E778 /* UserPicture.swift */; };
+		4C06221023FB17810059E778 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220F23FB17810059E778 /* DetailViewController.swift */; };
+		4C06221223FB1F230059E778 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06221123FB1F230059E778 /* UserTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		4C0621F023FAEF620059E778 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0621F323FAEF620059E778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C0621F523FAEF620059E778 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4C0621F523FAEF620059E778 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		4C0621F823FAEF620059E778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C0621FA23FAEF640059E778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C0621FD23FAEF640059E778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0621FF23FAEF640059E778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C06220523FB13380059E778 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		4C06220723FB150F0059E778 /* UserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResult.swift; sourceTree = "<group>"; };
+		4C06220923FB15390059E778 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4C06220B23FB15410059E778 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
+		4C06220D23FB15570059E778 /* UserPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPicture.swift; sourceTree = "<group>"; };
+		4C06220F23FB17810059E778 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		4C06221123FB1F230059E778 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,11 +69,18 @@
 			isa = PBXGroup;
 			children = (
 				4C0621F323FAEF620059E778 /* AppDelegate.swift */,
-				4C0621F523FAEF620059E778 /* ViewController.swift */,
+				4C0621F523FAEF620059E778 /* TableViewController.swift */,
 				4C0621F723FAEF620059E778 /* Main.storyboard */,
 				4C0621FA23FAEF640059E778 /* Assets.xcassets */,
 				4C0621FC23FAEF640059E778 /* LaunchScreen.storyboard */,
 				4C0621FF23FAEF640059E778 /* Info.plist */,
+				4C06220523FB13380059E778 /* APIService.swift */,
+				4C06220723FB150F0059E778 /* UserResult.swift */,
+				4C06220923FB15390059E778 /* User.swift */,
+				4C06220B23FB15410059E778 /* UserName.swift */,
+				4C06220D23FB15570059E778 /* UserPicture.swift */,
+				4C06220F23FB17810059E778 /* DetailViewController.swift */,
+				4C06221123FB1F230059E778 /* UserTableViewCell.swift */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -135,8 +156,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C0621F623FAEF620059E778 /* ViewController.swift in Sources */,
+				4C0621F623FAEF620059E778 /* TableViewController.swift in Sources */,
+				4C06221223FB1F230059E778 /* UserTableViewCell.swift in Sources */,
+				4C06220E23FB15570059E778 /* UserPicture.swift in Sources */,
+				4C06220823FB150F0059E778 /* UserResult.swift in Sources */,
+				4C06220623FB13380059E778 /* APIService.swift in Sources */,
+				4C06220A23FB15390059E778 /* User.swift in Sources */,
 				4C0621F423FAEF620059E778 /* AppDelegate.swift in Sources */,
+				4C06220C23FB15410059E778 /* UserName.swift in Sources */,
+				4C06221023FB17810059E778 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

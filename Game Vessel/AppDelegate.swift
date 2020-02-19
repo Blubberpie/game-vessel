@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Project
 //
-//  Created by Zwel Pai on 17/02/2020.
-//  Copyright © 2020 Zwel Pai. All rights reserved.
+//  Created by blubberpie on 17/02/2020.
+//  Copyright © 2020 blubberpie. All rights reserved.
 //
 
 import UIKit

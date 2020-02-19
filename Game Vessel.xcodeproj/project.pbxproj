@@ -3,39 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		4C0621F423FAEF620059E778 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0621F323FAEF620059E778 /* AppDelegate.swift */; };
-		4C0621F623FAEF620059E778 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C0621F523FAEF620059E778 /* TableViewController.swift */; };
 		4C0621F923FAEF620059E778 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0621F723FAEF620059E778 /* Main.storyboard */; };
 		4C0621FB23FAEF640059E778 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0621FA23FAEF640059E778 /* Assets.xcassets */; };
 		4C0621FE23FAEF640059E778 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0621FC23FAEF640059E778 /* LaunchScreen.storyboard */; };
 		4C06220623FB13380059E778 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220523FB13380059E778 /* APIService.swift */; };
-		4C06220823FB150F0059E778 /* UserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220723FB150F0059E778 /* UserResult.swift */; };
-		4C06220A23FB15390059E778 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220923FB15390059E778 /* User.swift */; };
-		4C06220C23FB15410059E778 /* UserName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220B23FB15410059E778 /* UserName.swift */; };
-		4C06220E23FB15570059E778 /* UserPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220D23FB15570059E778 /* UserPicture.swift */; };
-		4C06221023FB17810059E778 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06220F23FB17810059E778 /* DetailViewController.swift */; };
-		4C06221223FB1F230059E778 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C06221123FB1F230059E778 /* UserTableViewCell.swift */; };
+		4CC9AAFC23FCB123000F02C8 /* GameResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9AAFB23FCB123000F02C8 /* GameResult.swift */; };
+		4CC9AAFE23FCB193000F02C8 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9AAFD23FCB193000F02C8 /* Game.swift */; };
+		4CC9AB0023FCC3B6000F02C8 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9AAFF23FCC3B6000F02C8 /* MainTableViewController.swift */; };
+		4CC9AB0223FCC780000F02C8 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9AB0123FCC780000F02C8 /* GameTableViewCell.swift */; };
+		4CC9AB0423FCC9AE000F02C8 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9AB0323FCC9AE000F02C8 /* GameDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		4C0621F023FAEF620059E778 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C0621F023FAEF620059E778 /* Game Vessel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Game Vessel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C0621F323FAEF620059E778 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C0621F523FAEF620059E778 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		4C0621F823FAEF620059E778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C0621FA23FAEF640059E778 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C0621FD23FAEF640059E778 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0621FF23FAEF640059E778 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C06220523FB13380059E778 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
-		4C06220723FB150F0059E778 /* UserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResult.swift; sourceTree = "<group>"; };
-		4C06220923FB15390059E778 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		4C06220B23FB15410059E778 /* UserName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserName.swift; sourceTree = "<group>"; };
-		4C06220D23FB15570059E778 /* UserPicture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPicture.swift; sourceTree = "<group>"; };
-		4C06220F23FB17810059E778 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		4C06221123FB1F230059E778 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		4CC9AAFB23FCB123000F02C8 /* GameResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameResult.swift; sourceTree = "<group>"; };
+		4CC9AAFD23FCB193000F02C8 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		4CC9AAFF23FCC3B6000F02C8 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		4CC9AB0123FCC780000F02C8 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
+		4CC9AB0323FCC9AE000F02C8 /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +48,7 @@
 		4C0621E723FAEF620059E778 = {
 			isa = PBXGroup;
 			children = (
-				4C0621F223FAEF620059E778 /* Project */,
+				4C0621F223FAEF620059E778 /* Game Vessel */,
 				4C0621F123FAEF620059E778 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,37 +56,59 @@
 		4C0621F123FAEF620059E778 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				4C0621F023FAEF620059E778 /* Project.app */,
+				4C0621F023FAEF620059E778 /* Game Vessel.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C0621F223FAEF620059E778 /* Project */ = {
+		4C0621F223FAEF620059E778 /* Game Vessel */ = {
 			isa = PBXGroup;
 			children = (
+				4CC9AB0623FCDC92000F02C8 /* Services */,
+				4CC9AB0523FCDC70000F02C8 /* Controllers */,
+				4CC9AAF523FCA7C4000F02C8 /* Models */,
 				4C0621F323FAEF620059E778 /* AppDelegate.swift */,
-				4C0621F523FAEF620059E778 /* TableViewController.swift */,
 				4C0621F723FAEF620059E778 /* Main.storyboard */,
 				4C0621FA23FAEF640059E778 /* Assets.xcassets */,
 				4C0621FC23FAEF640059E778 /* LaunchScreen.storyboard */,
 				4C0621FF23FAEF640059E778 /* Info.plist */,
-				4C06220523FB13380059E778 /* APIService.swift */,
-				4C06220723FB150F0059E778 /* UserResult.swift */,
-				4C06220923FB15390059E778 /* User.swift */,
-				4C06220B23FB15410059E778 /* UserName.swift */,
-				4C06220D23FB15570059E778 /* UserPicture.swift */,
-				4C06220F23FB17810059E778 /* DetailViewController.swift */,
-				4C06221123FB1F230059E778 /* UserTableViewCell.swift */,
 			);
-			path = Project;
+			path = "Game Vessel";
+			sourceTree = "<group>";
+		};
+		4CC9AAF523FCA7C4000F02C8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4CC9AAFB23FCB123000F02C8 /* GameResult.swift */,
+				4CC9AAFD23FCB193000F02C8 /* Game.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4CC9AB0523FCDC70000F02C8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4CC9AAFF23FCC3B6000F02C8 /* MainTableViewController.swift */,
+				4CC9AB0323FCC9AE000F02C8 /* GameDetailViewController.swift */,
+				4CC9AB0123FCC780000F02C8 /* GameTableViewCell.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		4CC9AB0623FCDC92000F02C8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				4C06220523FB13380059E778 /* APIService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		4C0621EF23FAEF620059E778 /* Project */ = {
+		4C0621EF23FAEF620059E778 /* Game Vessel */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4C06220223FAEF640059E778 /* Build configuration list for PBXNativeTarget "Project" */;
+			buildConfigurationList = 4C06220223FAEF640059E778 /* Build configuration list for PBXNativeTarget "Game Vessel" */;
 			buildPhases = (
 				4C0621EC23FAEF620059E778 /* Sources */,
 				4C0621ED23FAEF620059E778 /* Frameworks */,
@@ -100,9 +118,9 @@
 			);
 			dependencies = (
 			);
-			name = Project;
+			name = "Game Vessel";
 			productName = Project;
-			productReference = 4C0621F023FAEF620059E778 /* Project.app */;
+			productReference = 4C0621F023FAEF620059E778 /* Game Vessel.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -113,15 +131,15 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1000;
 				LastUpgradeCheck = 1000;
-				ORGANIZATIONNAME = epita;
+				ORGANIZATIONNAME = blubberpie;
 				TargetAttributes = {
 					4C0621EF23FAEF620059E778 = {
 						CreatedOnToolsVersion = 10.0;
 					};
 				};
 			};
-			buildConfigurationList = 4C0621EB23FAEF620059E778 /* Build configuration list for PBXProject "Project" */;
-			compatibilityVersion = "Xcode 9.3";
+			buildConfigurationList = 4C0621EB23FAEF620059E778 /* Build configuration list for PBXProject "Game Vessel" */;
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -133,7 +151,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4C0621EF23FAEF620059E778 /* Project */,
+				4C0621EF23FAEF620059E778 /* Game Vessel */,
 			);
 		};
 /* End PBXProject section */
@@ -156,15 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C0621F623FAEF620059E778 /* TableViewController.swift in Sources */,
-				4C06221223FB1F230059E778 /* UserTableViewCell.swift in Sources */,
-				4C06220E23FB15570059E778 /* UserPicture.swift in Sources */,
-				4C06220823FB150F0059E778 /* UserResult.swift in Sources */,
+				4CC9AB0223FCC780000F02C8 /* GameTableViewCell.swift in Sources */,
 				4C06220623FB13380059E778 /* APIService.swift in Sources */,
-				4C06220A23FB15390059E778 /* User.swift in Sources */,
+				4CC9AAFC23FCB123000F02C8 /* GameResult.swift in Sources */,
+				4CC9AB0423FCC9AE000F02C8 /* GameDetailViewController.swift in Sources */,
+				4CC9AB0023FCC3B6000F02C8 /* MainTableViewController.swift in Sources */,
+				4CC9AAFE23FCB193000F02C8 /* Game.swift in Sources */,
 				4C0621F423FAEF620059E778 /* AppDelegate.swift in Sources */,
-				4C06220C23FB15410059E778 /* UserName.swift in Sources */,
-				4C06221023FB17810059E778 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,12 +327,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Project/Info.plist;
+				INFOPLIST_FILE = "Game Vessel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.epita.zwel.Project;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blubberpie.gamevessel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -328,12 +344,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Project/Info.plist;
+				INFOPLIST_FILE = "Game Vessel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.epita.zwel.Project;
+				PRODUCT_BUNDLE_IDENTIFIER = com.blubberpie.gamevessel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -343,7 +359,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		4C0621EB23FAEF620059E778 /* Build configuration list for PBXProject "Project" */ = {
+		4C0621EB23FAEF620059E778 /* Build configuration list for PBXProject "Game Vessel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C06220023FAEF640059E778 /* Debug */,
@@ -352,7 +368,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4C06220223FAEF640059E778 /* Build configuration list for PBXNativeTarget "Project" */ = {
+		4C06220223FAEF640059E778 /* Build configuration list for PBXNativeTarget "Game Vessel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				4C06220323FAEF640059E778 /* Debug */,

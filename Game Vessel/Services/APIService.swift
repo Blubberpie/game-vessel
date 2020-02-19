@@ -16,7 +16,7 @@ class APIService {
     // TODO (if possible): Randomize page numbers?
     let baseUrlString: String = "https://api.rawg.io/api/games"
     
-    func fetchGames(completionHandler: @escaping ([Game]) -> Void) {
+    func fetchGames(completionHandler: @escaping ([Game]?) -> Void) {
         guard let url = URL(string: baseUrlString + "?page_size=10") else {
             return
         }
@@ -24,6 +24,7 @@ class APIService {
         let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
             if let error = error {
                 print(error)
+                completionHandler(nil)
             }
             if let httpResponse = response as? HTTPURLResponse {
                 print("HTTP response code: \(httpResponse.statusCode)")

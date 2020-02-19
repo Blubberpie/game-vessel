@@ -19,7 +19,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="gsG-Fn-KOt">
                                 <rect key="frame" x="0.0" y="88" width="414" height="774"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" red="0.0" green="0.1681846082" blue="0.21010294560000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.0" green="0.16862745100000001" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="gameCell" rowHeight="280" id="iAX-Ei-Ggh" customClass="GameTableViewCell" customModule="Game_Vessel" customModuleProvider="target">
@@ -88,10 +88,29 @@
                     </view>
                     <navigationItem key="navigationItem" id="Uj7-XT-3d9"/>
                     <connections>
+                        <outlet property="errorView" destination="URu-Jg-QaV" id="KjS-a0-awS"/>
                         <outlet property="mainTableView" destination="gsG-Fn-KOt" id="8yt-HT-ATQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="URu-Jg-QaV">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeU-yM-Xzp">
+                            <rect key="frame" x="101" y="53.666666666666657" width="38" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="KeU-yM-Xzp" firstAttribute="centerY" secondItem="URu-Jg-QaV" secondAttribute="centerY" id="OBJ-hO-IVp"/>
+                        <constraint firstItem="KeU-yM-Xzp" firstAttribute="centerX" secondItem="URu-Jg-QaV" secondAttribute="centerX" id="pJX-zw-qvp"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="5Gf-NW-3e5"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="-9" y="19"/>
         </scene>
@@ -148,7 +167,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.16862745098039217" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.16818460822105408" blue="0.21010294556617737" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="R5e-je-7Ob" firstAttribute="leading" secondItem="3Od-sw-RFj" secondAttribute="leading" id="6Un-1a-P9G"/>
                             <constraint firstItem="3Od-sw-RFj" firstAttribute="bottom" secondItem="KfD-dl-oOA" secondAttribute="bottom" constant="20" id="8jH-8N-NE8"/>

@@ -86,6 +86,12 @@
       "scale" : "2x"
     },
     {
+      "size" : "1024x1024",
+      "idiom" : "ios-marketing",
+      "filename" : "controller.png",
+      "scale" : "1x"
+    },
+    {
       "idiom" : "ios-marketing",
       "size" : "1024x1024",
       "scale" : "1x"

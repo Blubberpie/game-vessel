@@ -11,6 +11,7 @@ import UIKit
 class MainTableViewController: UIViewController {
 
     @IBOutlet weak var mainTableView: UITableView!
+    @IBOutlet var errorView: UIView!
     
     let apiService = APIService()
     var games: [Game]?
@@ -29,7 +30,10 @@ class MainTableViewController: UIViewController {
         apiService.fetchGames(completionHandler: reloadTable(games:))
     }
     
-    func reloadTable(games: [Game]){
+    func reloadTable(games: [Game]?) {
+        if games == nil {
+            mainTableView.backgroundView = errorView
+        }
         self.games = games
         DispatchQueue.main.async {
             self.mainTableView.reloadData()

@@ -9,8 +9,6 @@
 import UIKit
 
 class GameDetailViewController: UIViewController {
-
-    var game: Game?
     
     @IBOutlet weak var gameBackgroundImageView: UIImageView!
     @IBOutlet weak var gameNameLabel: UILabel!
@@ -20,24 +18,38 @@ class GameDetailViewController: UIViewController {
     @IBOutlet weak var websiteLabel: UILabel!
     @IBOutlet weak var redditUrlLabel: UILabel!
     
+    var apiService = APIService()
+    var game: Game?
+    var gameDetail: GameDetail?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        populate()
-    }
-    
-    func populate(){
+        
         guard let game = game else {
             return
         }
-        setGameBackgroundImage(urlString: game.background_image)
-        gameNameLabel.text = game.name
-        releaseDateLabel.text = game.released
-//        gameDescriptionLabel.text = game.description
-        gameDescriptionLabel.text = game.name
-//        ratingLabel.text = String(game.rating)
-        websiteLabel.text = game.name
-        redditUrlLabel.text = game.name
+        apiService.fetchGameDetails(gameID: game.id, completionHandler: reloadPage(gameDetail:))
+    }
+    
+    func reloadPage(gameDetail: GameDetail){
+        self.gameDetail = gameDetail
+        DispatchQueue.main.async {
+            self.populate()
+            self.reloadInputViews()
+        }
+    }
+    
+    func populate(){
+        guard let gameDetail = self.gameDetail else {
+            return
+        }
+        setGameBackgroundImage(urlString: gameDetail.background_image)
+        gameNameLabel.text = gameDetail.name
+        releaseDateLabel.text = gameDetail.released
+        gameDescriptionLabel.text = gameDetail.description
+        ratingLabel.text = String(gameDetail.rating)
+        websiteLabel.text = gameDetail.website
+        redditUrlLabel.text = gameDetail.reddit_url
     }
     
     func setGameBackgroundImage(urlString: String){

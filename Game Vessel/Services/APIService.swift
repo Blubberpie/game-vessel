@@ -14,10 +14,10 @@ class APIService {
     // - page = page number
     // - page_size = number of games to get
     // TODO (if possible): Randomize page numbers?
-    let urlString: String = "https://api.rawg.io/api/games?page_size=10"
+    let baseUrlString: String = "https://api.rawg.io/api/games"
     
     func fetchGames(completionHandler: @escaping ([Game]) -> Void) {
-        guard let url = URL(string: urlString) else {
+        guard let url = URL(string: baseUrlString + "?page_size=10") else {
             return
         }
         
@@ -32,6 +32,22 @@ class APIService {
                 completionHandler(gameResults.results)
             } else {
                 print("Failed to decode JSON!")
+            }
+        })
+        
+        task.resume()
+    }
+    
+    func fetchGameDetails(gameID: Int, completionHandler: @escaping (GameDetail) -> Void) {
+        guard let url = URL(string: baseUrlString + "/\(gameID)") else {
+            return
+        }
+        
+        let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
+            if let data = data, let gameDetail = try? JSONDecoder().decode(GameDetail.self, from: data) {
+                completionHandler(gameDetail)
+            } else {
+                print("JSON fail!")
             }
         })
         

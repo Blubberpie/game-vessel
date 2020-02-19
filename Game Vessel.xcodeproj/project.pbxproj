@@ -17,6 +17,7 @@
 		4CC9AB0023FCC3B6000F02C8 /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9AAFF23FCC3B6000F02C8 /* MainTableViewController.swift */; };
 		4CC9AB0223FCC780000F02C8 /* GameTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9AB0123FCC780000F02C8 /* GameTableViewCell.swift */; };
 		4CC9AB0423FCC9AE000F02C8 /* GameDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9AB0323FCC9AE000F02C8 /* GameDetailViewController.swift */; };
+		4CC9AB0823FD1B58000F02C8 /* GameDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CC9AB0723FD1B58000F02C8 /* GameDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		4CC9AAFF23FCC3B6000F02C8 /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		4CC9AB0123FCC780000F02C8 /* GameTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTableViewCell.swift; sourceTree = "<group>"; };
 		4CC9AB0323FCC9AE000F02C8 /* GameDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetailViewController.swift; sourceTree = "<group>"; };
+		4CC9AB0723FD1B58000F02C8 /* GameDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				4CC9AAFB23FCB123000F02C8 /* GameResult.swift */,
 				4CC9AAFD23FCB193000F02C8 /* Game.swift */,
+				4CC9AB0723FD1B58000F02C8 /* GameDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -174,6 +177,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CC9AB0823FD1B58000F02C8 /* GameDetail.swift in Sources */,
 				4CC9AB0223FCC780000F02C8 /* GameTableViewCell.swift in Sources */,
 				4C06220623FB13380059E778 /* APIService.swift in Sources */,
 				4CC9AAFC23FCB123000F02C8 /* GameResult.swift in Sources */,

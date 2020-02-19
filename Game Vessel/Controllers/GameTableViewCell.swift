@@ -17,7 +17,6 @@ class GameTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        gameBackgroundImageView.layer.cornerRadius = gameBackgroundImageView.frame.height / 10
         gameBackgroundImageView.clipsToBounds = true
     }
 

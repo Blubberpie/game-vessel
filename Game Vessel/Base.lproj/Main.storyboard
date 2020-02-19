@@ -33,7 +33,8 @@
                                                     <rect key="frame" x="0.0" y="46.333333333333329" width="414" height="193.33333333333337"/>
                                                     <color key="backgroundColor" red="0.027450980392156862" green="0.21176470588235294" blue="0.25882352941176467" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="210" id="ITG-Wx-U3h"/>
+                                                        <constraint firstAttribute="height" relation="lessThanOrEqual" constant="194" id="ITG-Wx-U3h"/>
+                                                        <constraint firstAttribute="width" relation="lessThanOrEqual" constant="414" id="dFp-Vz-OhD"/>
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game Name" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="eyf-nl-w8r">

@@ -22,6 +22,10 @@ class MainTableViewController: UIViewController {
         mainTableView.dataSource = self
         mainTableView.delegate = self
         
+        // Make separators go edge to edge
+        mainTableView.layoutMargins = UIEdgeInsets.zero
+        mainTableView.separatorInset = UIEdgeInsets.zero
+        
         apiService.fetchGames(completionHandler: reloadTable(games:))
     }
     
@@ -60,8 +64,9 @@ extension MainTableViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         
+        cell.layoutMargins = UIEdgeInsets.zero
         cell.gameNameLabel.text = game.name
-        cell.setGameBackgroundImage(urlString: game.backgroundImage)
+        cell.setGameBackgroundImage(urlString: game.background_image)
         cell.gameReleaseDateLabel.text = game.released
         return cell
     }

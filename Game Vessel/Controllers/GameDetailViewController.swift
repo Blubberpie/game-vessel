@@ -30,14 +30,20 @@ class GameDetailViewController: UIViewController {
         guard let game = game else {
             return
         }
-        // set background image
+        setGameBackgroundImage(urlString: game.background_image)
         gameNameLabel.text = game.name
         releaseDateLabel.text = game.released
 //        gameDescriptionLabel.text = game.description
         gameDescriptionLabel.text = game.name
-        ratingLabel.text = String(game.rating)
+//        ratingLabel.text = String(game.rating)
         websiteLabel.text = game.name
         redditUrlLabel.text = game.name
+    }
+    
+    func setGameBackgroundImage(urlString: String){
+        let url = URL(string: urlString)
+        let data = try? Data(contentsOf: url!)
+        gameBackgroundImageView.image = UIImage(data: data!)
     }
 
 }
